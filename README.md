@@ -92,7 +92,9 @@ src是glad文件夹里的glad.c
 ```
 #include <khrplatform.h>
 ```
+到这为止,glew,glfw,gad的使用都没有问题了
 
+但glue好像一直没用到，这好像是个比较老的库了，所以感觉不太matter？
 
 
 ## Reference
@@ -100,3 +102,4 @@ src是glad文件夹里的glad.c
 * include glad的写法需要的时候可以参考 https://blog.csdn.net/suchvaliant/article/details/122747967
 * 最一开始的版本 没有cp -r的动作，最后编译没有成功 https://blog.csdn.net/JasmineCAicai/article/details/119221390
 * Mac下的配置 https://blog.csdn.net/suchvaliant/article/details/122747967 
+* 环境测试的代码 https://learnopengl-cn.github.io/01%20Getting%20started/04%20Hello%20Triangle/ 
