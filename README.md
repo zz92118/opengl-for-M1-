@@ -65,8 +65,11 @@ set(LOCAL_H /opt/homebrew/include) #得关注一下这一行代码
 ```
 
 
+目前glad上的回调函数ld symbol问题还是没有解决 回去拿win主机试一下吧
+
 
 ## Reference
 * https://zhuanlan.zhihu.com/p/498470512
 * include glad的写法需要的时候可以参考 https://blog.csdn.net/suchvaliant/article/details/122747967
 * 最一开始的版本 没有cp -r的动作，最后编译没有成功 https://blog.csdn.net/JasmineCAicai/article/details/119221390
+* Mac下的配置 https://blog.csdn.net/suchvaliant/article/details/122747967 
