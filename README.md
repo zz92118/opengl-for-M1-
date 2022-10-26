@@ -96,7 +96,7 @@ src是glad文件夹里的glad.c
 到这为止,glew,glfw,gad的使用都没有问题了
 
 但glue好像一直没用到，这好像是个比较老的库了，所以感觉不太matter？
-
+ glut failed to display.
 
 ## Reference
 * https://zhuanlan.zhihu.com/p/498470512
