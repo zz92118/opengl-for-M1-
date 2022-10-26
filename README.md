@@ -68,6 +68,33 @@ set(LOCAL_H /opt/homebrew/include) #得关注一下这一行代码
 目前glad上的回调函数ld symbol问题还是没有解决 回去拿win主机试一下吧
 
 
+## 更新一下 ld symbol not found 的问题终于解决了
+解决的方法是把glad.c添加到src文件下，并在cmakelist.txt下对 main.cpp 和 glad.c 一起编译 也就是加这段话
+
+```
+ add_executable(OpenGL src/glad.c src/main.cpp)
+```
+因为我include的路径是
+
+```
+set(LOCAL_H /opt/homebrew/include)
+
+目录长这样，所以有些代码中include的头文件得改掉路径
+
+GL		glad.h		src
+GLFW		khrplatform.h	yaml.h
+GL GLFW里面是需要的.h文件
+src是glad文件夹里的glad.c
+
+```
+
+比如glad 里面我就把路径KHR\khrplatform.h 直接改成了 khrplatform.h
+```
+#include <khrplatform.h>
+```
+
+
+
 ## Reference
 * https://zhuanlan.zhihu.com/p/498470512
 * include glad的写法需要的时候可以参考 https://blog.csdn.net/suchvaliant/article/details/122747967
