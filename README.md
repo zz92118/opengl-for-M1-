@@ -8,6 +8,7 @@
 ```shell
 glfw ：brew install glfw
 glew ：brew install glew
+      brew install freeglut
 ```
 
 然后去这个网站下找到对应的glad版本，点击generate按钮
